@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rev - Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Rev Voice Assistant</h1>
+            <p>Powered by Revolt Motors</p>
+        </div>
+        
+        <div class="chat-interface">
+            <div class="status-indicator">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Disconnected</span>
+            </div>
+            
+            <div class="voice-controls">
+                <button id="startBtn" class="voice-btn start-btn">
+                    <span class="btn-icon">🎤</span>
+                    Start Conversation
+                </button>
+                
+                <button id="stopBtn" class="voice-btn stop-btn" disabled>
+                    <span class="btn-icon">⏹️</span>
+                    Stop
+                </button>
+            </div>
+            
+            <div class="audio-visualizer">
+                <canvas id="visualizer" width="300" height="100"></canvas>
+            </div>
+            
+            <div class="conversation-log" id="conversationLog">
+                <div class="message system-message">
+                    Welcome! Click "Start Conversation" to begin talking with Rev about Revolt Motors.
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
